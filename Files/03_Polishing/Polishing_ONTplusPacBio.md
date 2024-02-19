@@ -2,7 +2,7 @@
 
 ## Requirements
 
-Before running this step, you should have generated a consensus assembly of your genome using Trycycler, as described [here](..\02_Assembly\Trycycler_reconciliation.md).
+Before running this step, you should have generated a consensus assembly of your genome using Trycycler, as described [here](../02_Assembly/Trycycler_reconciliation.md).
 
 ### Data needed
 * Trimmed and filtered ONT reads in *.fastq.gz format

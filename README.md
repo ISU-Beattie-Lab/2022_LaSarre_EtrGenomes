@@ -13,28 +13,28 @@ The files provided below provide details for all steps in boxes 1–5.
 
 ## Read QC and preprocessing (Steps 1, 3, and 4)
 
-[ONT_preQC](Files\01_ReadQC\ONT_preQC.md) - Text file describing Nanopore read pre-processing and QC
+[ONT_preQC](Files/01_ReadQC/ONT_preQC.md) - Text file describing Nanopore read pre-processing and QC
 
-[PacBio_preQC](Files\01_ReadQC\PacBio_preQC.md) - Text file describing PacBio read pre-processing and QC
+[PacBio_preQC](Files/01_ReadQC/PacBio_preQC.md) - Text file describing PacBio read pre-processing and QC
 
-[Illumina_preQC](Files\01_ReadQC\Illumina_preQC.md) - Text file describing Illumina read pre-processing and QC  
+[Illumina_preQC](Files/01_ReadQC/Illumina_preQC.md) - Text file describing Illumina read pre-processing and QC  
 </br>
 
 
 ## Assembly (Step 2)
 
-[ONT_5assemblers_nucmer](Files\02_Assembly\ONT_5assemblers_nucmer.md) - Text file describing the steps and commands for *de novo* assembly of pre-processed Nanopore reads using five different assemblers and self-alignment of contigs to evaluate over-circularization.
+[ONT_5assemblers_nucmer](Files/02_Assembly/ONT_5assemblers_nucmer.md) - Text file describing the steps and commands for *de novo* assembly of pre-processed Nanopore reads using five different assemblers and self-alignment of contigs to evaluate over-circularization.
 
-[Remove_terminal_redundancy](Files\02_Assembly\Remove_terminal_redundancy.md) - Text file describing the steps and commands for identifying over-circularized contigs and trimming the multi-fasta file for each assembly to eliminate terminal redundancy.
+[Remove_terminal_redundancy](Files/02_Assembly/Remove_terminal_redundancy.md) - Text file describing the steps and commands for identifying over-circularized contigs and trimming the multi-fasta file for each assembly to eliminate terminal redundancy.
 
-[Trycycler_reconciliation](Files\02_Assembly\Trycycler_reconciliation.md) - Text file describing the steps for creating a consensus genome assembly using Trycyler (must be done manually for each genome because there is an occasional need for manual intervention).  
+[Trycycler_reconciliation](Files/02_Assembly/Trycycler_reconciliation.md) - Text file describing the steps for creating a consensus genome assembly using Trycyler (must be done manually for each genome because there is an occasional need for manual intervention).  
 </br>
 
 
 ## Assembly Polishing (Step 5)
-[Polishing_ONTplusIllumina](Files\03_Polishing\Polishing_ONTplusIllumina.md) - Text file describing the steps and commands for polishing assemblies with Nanopore and Illumina reads; includes adjustment of contig start positions during polishing to ensure clean circularization.
+[Polishing_ONTplusIllumina](Files/03_Polishing/Polishing_ONTplusIllumina.md) - Text file describing the steps and commands for polishing assemblies with Nanopore and Illumina reads; includes adjustment of contig start positions during polishing to ensure clean circularization.
 
-[Polishing_ONTplusPacBio](Files\03_Polishing\Polishing_ONTplusPacBio.md) - Text file describing the steps and commands for polishing assemblies with Nanopore and PacBio reads; includes adjustment of contig start positions during polishing to ensure clean circularization.  
+[Polishing_ONTplusPacBio](Files//03_Polishing/Polishing_ONTplusPacBio.md) - Text file describing the steps and commands for polishing assemblies with Nanopore and PacBio reads; includes adjustment of contig start positions during polishing to ensure clean circularization.  
 </br>  
 
 

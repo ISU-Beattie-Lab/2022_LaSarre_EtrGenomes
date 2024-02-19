@@ -3,7 +3,7 @@
 ## Requirements
 
 ### Data needed
-The commands below assume that the raw ONT reads are in *.fastq.gz format and that reads for a single sample (e.g., strain) have been demultiplexed into a sample-specific directory.
+* Demultiplexed raw ONT reads in *.fastq.gz format
 
 ### Software needed (versions indicated are those used in the 2022 paper)
 * Porechop [v0.2.4] (https://github.com/rrwick/Porechop)
