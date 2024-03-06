@@ -100,29 +100,29 @@ mkdir nucmer && cd nucmer
 mkdir Flye && cd Flye
 awk '/^>/{s=++d".fasta"} {print > s}' /Path/WorkingDirectory/StrainName/Flye/assembly.fasta
 for j in $(ls *.fasta); do nucmer --maxmatch --nosimplify --prefix=$j $j $j; done
-for k in $(ls *.delta); do mummerplot --prefix=$k --png $k; done
+for k in $(ls *.delta); do mummerplot --prefix=$k --png $k; show-coords -r $k > $k.coords; done
 
 cd ..
 mkdir miniasm && cd miniasm
 awk '/^>/{s=++d".fasta"} {print > s}' /Path/WorkingDirectory/StrainName/miniasm/StrainName_ONTtrimfilt_miniasmpolish.fasta
 for l in $(ls *.fasta); do nucmer --maxmatch --nosimplify --prefix=$l $l $l; done
-for m in $(ls *.delta); do mummerplot --prefix=$m --png $m; done
+for m in $(ls *.delta); do mummerplot --prefix=$m --png $m; show-coords -r $m > $m.coords; done
 
 cd ..
 mkdir Raven && cd Raven
 awk '/^>/{s=++d".fasta"} {print > s}' /Path/WorkingDirectory/StrainName/Raven/StrainName_ONTtrimfilt_raven_all.fasta
 for n in $(ls *.fasta); do nucmer --maxmatch --nosimplify --prefix=$n $n $n; done
-for o in $(ls *.delta); do mummerplot --prefix=$o --png $o; done
+for o in $(ls *.delta); do mummerplot --prefix=$o --png $o; show-coords -r $o > $o.coords; done
 
 cd ..
 mkdir Unicycler && cd Unicycler
 awk '/^>/{s=++d".fasta"} {print > s}' /Path/WorkingDirectory/StrainName/Unicycler/assembly.fasta
 for p in $(ls *.fasta); do nucmer --maxmatch --nosimplify --prefix=$p $p $p; done
-for q in $(ls *.delta); do mummerplot --prefix=$q --png $q; done
+for q in $(ls *.delta); do mummerplot --prefix=$q --png $q; show-coords -r $q > $q.coords; done
 
 cd ..
 mkdir NextDenovo && cd NextDenovo
 awk '/^>/{s=++d".fasta"} {print > s}' /Path/WorkingDirectory/StrainName/NextDenovo/NextPolish/01_rundir/genome.nextpolish.fasta
 for r in $(ls *.fasta); do nucmer --maxmatch --nosimplify --prefix=$r $r $r; done
-for s in $(ls *.delta); do mummerplot --prefix=$s --png $s; done
+for s in $(ls *.delta); do mummerplot --prefix=$s --png $s; show-coords -r $s > $s.coords; done
 ```  
